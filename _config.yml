@@ -1,0 +1,8 @@
+
+plugins:
+  - jekyll-redirect-from
+redirect_from:
+  - "https://www.prothoughtinsight.name.ng"
+  - "https://www.prothoughtinsight.name.ng"
+redirect_to: 
+- "http://prothoughtinsight.name.ng
