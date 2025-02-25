@@ -45,10 +45,9 @@
         }
         
     .header {
-  background-color: #FFA500; 
+  background-color: black; 
   display: flex;
   align-items: center;
-  border-bottom: 3px solid #ff4500; 
   padding: 20px;
   justify-content: space-between;
 }
@@ -59,7 +58,7 @@
 }
 
 .prothought {
-  color: black;
+  color: orange;
   font-weight: bold;
 }
 
@@ -94,12 +93,11 @@
 
 
 .footer {
-  background-color: #FFA500; 
+  background-color: black; 
   padding: 30px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 3px solid #ff4500; 
 }
 
 .footer p{
