@@ -45,7 +45,7 @@
         }
         
     .header {
-  background-color: black; 
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
   align-items: center;
   padding: 20px;
@@ -93,7 +93,7 @@
 
 
 .footer {
-  background-color: black; 
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 30px 50px;
   display: flex;
   justify-content: space-between;
