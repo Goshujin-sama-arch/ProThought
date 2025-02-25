@@ -71,7 +71,7 @@
 .nav a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: white;
   font-size: 16px;
   padding: 5px;
   display: flex;
@@ -79,7 +79,7 @@
 
 
 .nav a:hover {
-     color: white;
+     color: gray;
     }
 
 .nav a:active {
@@ -88,7 +88,7 @@
     }
 
 .nav a:focus {
-   color: white;
+   color: orange;
   }
 
 
@@ -115,7 +115,7 @@
 
 #terms a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 12px;
 }
