@@ -111,6 +111,7 @@
 .footer p{
      font-size: 16px;
      color: white;
+     text-align: left;
    }
 
 .texts {
@@ -127,6 +128,7 @@
     color: white;
     font-weight: bold;
     font-size: 12px;
+    text-align: left;
 }
 
 
