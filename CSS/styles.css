@@ -256,6 +256,76 @@
   }
 
 
+.sib-form-message-panel {
+    font-size: 16px;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    border-radius: 3px;
+    max-width: 540px;
+}
+
+.sib-form-message-panel.error {
+    color: #661d1d;
+    background-color: #ffeded;
+    border-color: #ff4949;
+}
+
+.sib-form-message-panel.success {
+    color: #085229;
+    background-color: #e7faf0;
+    border-color: #13ce66;
+}
+
+.sib-container {
+    text-align: center;
+    background-color: #FFF;
+    max-width: 540px;
+    border-radius: 3px;
+    border: 1px solid #C0CCD9;
+}
+
+.form-title {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    color: #3C4858;
+}
+
+.form-description {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    color: #3C4858;
+}
+
+.entry__label {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    color: #3C4858;
+}
+
+.entry__specification {
+    font-size: 12px;
+    color: #8390A4;
+}
+
+.subscribe-btn {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    color: #FFFFFF;
+    background-color: #3E4857;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    background-color: #2C3745;
+}
+
+
 /* Mobile View */
 @media (max-width: 767px) {
 
