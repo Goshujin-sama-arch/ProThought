@@ -3,7 +3,7 @@ document.getElementById("newsletter-form").addEventListener("submit", async func
 
     const email = document.getElementById("email").value;
     const apiKey = "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"; 
-    const listId = 3; 
+    const listId = [3]; 
 
     const responseMessage = document.getElementById("response-message");
 
@@ -14,8 +14,8 @@ document.getElementById("newsletter-form").addEventListener("submit", async func
     }
 
     const data = {
-        email: email,
-        listIds: [listId]
+        email: victorjaja500@gmail.com,
+        listIds: [3]
     };
 
     try {
