@@ -14,7 +14,7 @@ document.getElementById("newsletter-form").addEventListener("submit", async func
     }
 
     const data = {
-        email: victorjaja500@gmail.com,
+        email: "victorjaja500@gmail.com",
         listIds: [3]
     };
 
