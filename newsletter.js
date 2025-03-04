@@ -36,3 +36,21 @@ document.getElementById("newsletter-form").addEventListener("submit", async func
         responseMessage.style.color = "red";
     }
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let cookieBanner = document.getElementById("cookie-banner");
+    let acceptButton = document.getElementById("accept-cookies");
+
+    // Check if cookies were already accepted
+    if (!localStorage.getItem("cookiesAccepted")) {
+        cookieBanner.style.display = "flex";
+    }
+
+    // Accept cookies
+    acceptButton.addEventListener("click", function () {
+        localStorage.setItem("cookiesAccepted", "true");
+        cookieBanner.style.display = "none";
+    });
+});
