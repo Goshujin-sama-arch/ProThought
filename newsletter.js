@@ -1,13 +1,13 @@
 document.getElementById("newsletter-form").addEventListener("submit", async function(event) {
-    event.preventDefault();  // Prevent page reload
+    event.preventDefault();  
 
     const email = document.getElementById("email").value;
-    const apiKey = "YOUR_BREVO_API_KEY";  // Replace with actual API key
-    const listId = YOUR_BREVO_LIST_ID;    // Replace with actual List ID
+    const apiKey = "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"; 
+    const listId = #3; 
 
     const responseMessage = document.getElementById("response-message");
 
-    if (!email.includes("@")) {  // Basic email validation
+    if (!email.includes("@")) {  
         responseMessage.innerHTML = "❌ Please enter a valid email.";
         responseMessage.style.color = "red";
         return;
@@ -29,7 +29,7 @@ document.getElementById("newsletter-form").addEventListener("submit", async func
         });
 
         const result = await response.json();
-        console.log(result);  // Debugging response
+        console.log(result);  
 
         if (response.ok) {
             responseMessage.innerHTML = "✅ Subscription successful! Check your email.";
@@ -55,14 +55,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const cookieBanner = document.getElementById("cookie-banner");
     const acceptButton = document.getElementById("accept-cookies");
 
-    // Check if cookies are already accepted
+    
     if (localStorage.getItem("cookiesAccepted") === "true") {
-        cookieBanner.style.display = "none"; // Hide banner
+        cookieBanner.style.display = "none";
     }
 
     acceptButton.addEventListener("click", function () {
-        localStorage.setItem("cookiesAccepted", "true"); // Save consent
-        cookieBanner.style.display = "none"; // Hide banner on all pages
+        localStorage.setItem("cookiesAccepted", "true"); 
+        cookieBanner.style.display = "none";
     });
 });
 
