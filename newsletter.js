@@ -1,12 +1,17 @@
-
 document.getElementById("newsletter-form").addEventListener("submit", async function(event) {
-    event.preventDefault();  // Prevent form from reloading the page
+    event.preventDefault();  // Prevent page reload
 
     const email = document.getElementById("email").value;
-    const apiKey = "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";  // Replace with your actual Brevo API Key
-    const listId = "#3";  // Replace with your actual Brevo List ID
+    const apiKey = "YOUR_BREVO_API_KEY";  // Replace with actual API key
+    const listId = YOUR_BREVO_LIST_ID;    // Replace with actual List ID
 
     const responseMessage = document.getElementById("response-message");
+
+    if (!email.includes("@")) {  // Basic email validation
+        responseMessage.innerHTML = "❌ Please enter a valid email.";
+        responseMessage.style.color = "red";
+        return;
+    }
 
     const data = {
         email: email,
@@ -23,34 +28,44 @@ document.getElementById("newsletter-form").addEventListener("submit", async func
             body: JSON.stringify(data)
         });
 
+        const result = await response.json();
+        console.log(result);  // Debugging response
+
         if (response.ok) {
             responseMessage.innerHTML = "✅ Subscription successful! Check your email.";
             responseMessage.style.color = "green";
-            document.getElementById("newsletter-form").reset();  // Clear input field
+            document.getElementById("newsletter-form").reset();
         } else {
-            responseMessage.innerHTML = "❌ Subscription failed. Try again.";
+            responseMessage.innerHTML = "❌ Error: " + (result.message || "Try again.");
             responseMessage.style.color = "red";
         }
     } catch (error) {
-        responseMessage.innerHTML = "❌ Error: " + error.message;
+        console.error("Fetch error:", error);
+        responseMessage.innerHTML = "❌ Network error. Check console.";
         responseMessage.style.color = "red";
     }
 });
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    let cookieBanner = document.getElementById("cookie-banner");
-    let acceptButton = document.getElementById("accept-cookies");
 
-    // Check if cookies were already accepted
-    if (!localStorage.getItem("cookiesAccepted")) {
-        cookieBanner.style.display = "flex";
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cookieBanner = document.getElementById("cookie-banner");
+    const acceptButton = document.getElementById("accept-cookies");
+
+    // Check if cookies are already accepted
+    if (localStorage.getItem("cookiesAccepted") === "true") {
+        cookieBanner.style.display = "none"; // Hide banner
     }
 
-    // Accept cookies
     acceptButton.addEventListener("click", function () {
-        localStorage.setItem("cookiesAccepted", "true");
-        cookieBanner.style.display = "none";
+        localStorage.setItem("cookiesAccepted", "true"); // Save consent
+        cookieBanner.style.display = "none"; // Hide banner on all pages
     });
 });
+
+
+
+
