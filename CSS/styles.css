@@ -177,43 +177,6 @@
         }
 
 
-.subscribe-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.85);
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* Input Field */
-.subscribe-form input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-/* Subscribe Button */
-.subscribe-form button {
-    width: 100%;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.subscribe-form button:hover {
-    background: #0056b3;
-}
-
 
 
 /* Mobile View */
