@@ -107,6 +107,18 @@
    color: orange;
   }
 
+.hamburger {
+    display: none; /* Hide by default on larger screens */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px; /* Adjust to fit your layout */
+}
+
 
 .footer {
   background-color: rgba(0, 0, 0, 0.85) !important; 
@@ -215,8 +227,13 @@
 }
   
 
-/* Hide the menu on small screens */
+
+/* Responsive styles for mobile screens */
 @media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show only on small screens */
+    }
+
     .nav {
         display: none;
         flex-direction: column;
@@ -228,18 +245,8 @@
         border-radius: 5px;
     }
 
-    .nav a {
-        display: block;
-        padding: 10px;
-    }
-
-    .hamburger {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 24px;
-        color: white;
-        cursor: pointer;
+    .nav.active {
+        display: flex; /* Show when toggled */
     }
 }
 
