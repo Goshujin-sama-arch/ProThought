@@ -16,8 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
 function toggleMenu() {
-    document.getElementById("nav-menu").classList.toggle("active");
+    let nav = document.getElementById("nav-menu");
+    nav.classList.toggle("active");
 }
 
 
