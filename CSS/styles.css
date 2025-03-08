@@ -118,6 +118,11 @@
      text-align: left;
    }
 
+.form p,h2{
+     background-color: rgba(0, 0, 0, 0.85) !important; 
+     color: white;
+   }
+
 .texts {
     font-weight: bold;
     font-style: italic;
