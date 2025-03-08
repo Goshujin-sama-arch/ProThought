@@ -83,19 +83,19 @@
 }
 
 .nav {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.85); 
+    background-color: rgba(0, 0, 0, 0.85) !important; /* Ensures it matches the header */
     position: absolute;
     top: 60px; /* Adjust based on header height */
     right: 0;
-    width: 70%;
+    width: 100%;
     display: none; /* Initially hidden */
     flex-direction: column;
     text-align: center;
-    padding: 10px 0;
-  }
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Ensure no unwanted margin */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
 
 .nav.active {
     display: flex;
