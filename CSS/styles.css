@@ -82,6 +82,20 @@
   text-align: left;
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.85); 
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 0;
+    width: 100%;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
 
 .nav.active {
     display: flex;
@@ -90,11 +104,12 @@
 .nav a {
   text-decoration: none;
   font-weight: bold;
-  color: white;
   font-size: 16px;
-  padding: 5px;
-  display: flex;
-  margin: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
 
 
@@ -203,14 +218,6 @@
 
 /* Mobile View */
 @media (max-width: 767px) {
-
-  .nav {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    margin: 10px;
-    padding: 5px;
-  }
 
   .nav a {
     font-size: 13px;
