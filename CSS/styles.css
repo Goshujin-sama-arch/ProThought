@@ -80,6 +80,10 @@
 }
 
 
+.nav.active {
+    display: flex;
+}
+
 .nav a {
   text-decoration: none;
   font-weight: bold;
@@ -210,6 +214,35 @@
   }
 }
   
+
+/* Hide the menu on small screens */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
         
 /* Desktop View */
 @media (min-width: 768px) {
