@@ -86,7 +86,7 @@
 }
 
 .nav {
-    background-color: none; /* Ensures it matches the header */
+    background-color:rgba(0, 0, 0, 0.85) !important ; /* Ensures it matches the header */
     position: absolute;
     top: 60px; /* Adjust based on header height */
     right: 0;
