@@ -68,18 +68,21 @@
   font-size: 30px;
   font-weight: bold;
   text-align: left;
+  align-item: left;
 }
 
 .prothought {
   color: orange;
   font-weight: bold;
   text-align: left;
+  align-item: left;
 }
 
 .insight {
   color: white;
   font-weight: bold;
   text-align: left;
+  align-item: left;
 }
 
 .nav {
