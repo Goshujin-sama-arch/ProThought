@@ -87,10 +87,8 @@
 
 .nav {
     background-color:rgba(0, 0, 0, 0.85) !important ; /* Ensures it matches the header */
-    position: absolute;
     top: 60px; /* Adjust based on header height */
-    right: 0;
-    width: 100%;
+    width: 70%;
     display: none; /* Initially hidden */
     flex-direction: column;
     text-align: center;
