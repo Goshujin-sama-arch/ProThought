@@ -95,7 +95,7 @@
     flex-direction: column;
     text-align: center;
     padding: 0; /* Remove extra padding */
-    margin: 0; /* Ensure no unwanted margin */
+    margin: 10px; /* Ensure no unwanted margin */
     z-index: 1000; /* Ensure it appears above other elements */
 }
 
