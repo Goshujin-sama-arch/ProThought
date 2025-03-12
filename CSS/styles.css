@@ -4,10 +4,15 @@
             margin: 0 auto;
             padding: 0 auto;
             font-size: 16px;
+            box-sizing: border-box;
         }
 
       html {
            scroll-behavior: smooth;
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           
        }
 
         .container {
@@ -87,8 +92,10 @@
 
 .nav {
     background-color:rgba(0, 0, 0, 0.85) !important ; /* Ensures it matches the header */
-    top: 60px; /* Adjust based on header height */
-    width: 70%;
+    top: 0; /* Adjust based on header height */
+    left: 0;
+    position: fixed;
+    width: 100%;
     display: none; /* Initially hidden */
     flex-direction: column;
     text-align: center;
