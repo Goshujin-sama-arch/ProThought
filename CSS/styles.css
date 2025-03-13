@@ -158,6 +158,18 @@ p, section p {
         z-index: 1000;
     }
 
+   .nav:hover{
+      color: orange;
+    }
+
+   .nav:active{
+      color: orange;
+    }
+
+   .nav:focus{
+      color: orange;
+    }
+
     .nav.active {
         transform: translateX(0);
     }
@@ -177,9 +189,9 @@ p, section p {
     .nav a {
         text-decoration: none;
         color: white;
-        font-size: 25px;
+        font-size: 20px;
         display: block;
-        padding: 5px;
+        padding: 10px;
     }
 
     .hamburger {
@@ -244,6 +256,7 @@ p, section p {
         color: white;
         font-size: 18px;
         text-decoration: none;
+        padding: 5px;
     }
 
     .hamburger {
