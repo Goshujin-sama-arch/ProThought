@@ -92,7 +92,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 80%; /* Adjusted to cover a portion of the screen */
+    width: 40%; /* Adjusted to cover a portion of the screen */
     background-color: white;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     transform: translateX(-100%);
@@ -117,9 +117,10 @@
 /* Navigation Links */
 .nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: 10px;
     text-align: left;
+    text-decoration: none;
 }
 
 .nav li {
@@ -127,10 +128,10 @@
     border-bottom: 1px solid #ddd;
 }
 
-.nav li a {
+.nav a {
     text-decoration: none;
-    color: blue;
-    font-size: 18px;
+    color: white;
+    font-size: 30px;
     display: block;
 }
 
@@ -138,7 +139,7 @@
 /* Hamburger Button */
 .hamburger {
     display: block; /* Displayed on mobile */
-    background: none;
+    background-color: rgba(0, 0, 0, 0.85);
     border: none;
     font-size: 24px;
     color: white;
