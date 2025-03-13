@@ -201,6 +201,7 @@ p, section p {
         color: white;
         cursor: pointer;
         position: fixed;
+        background: none;
         top: 25px;
         right: 20px;
         z-index: 1001;
