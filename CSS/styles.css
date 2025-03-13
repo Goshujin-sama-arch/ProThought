@@ -196,7 +196,6 @@ p, section p {
 
     .hamburger {
         display: block;
-        background-color: rgba(0, 0, 0, 0.85);
         border: none;
         font-size: 24px;
         color: white;
