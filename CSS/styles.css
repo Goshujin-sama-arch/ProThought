@@ -89,6 +89,7 @@
 .nav {
     background-color:rgba(0, 0, 0, 0.85) !important ; 
     position: absolute;
+    width: 100%;
     max-width: 100%;
     display: none; 
     text-align: center;
