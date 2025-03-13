@@ -101,7 +101,7 @@
 }
 
 
-.nav:active {
+.nav.active {
     transform: translateX(0);
 }
 
