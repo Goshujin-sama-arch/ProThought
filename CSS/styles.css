@@ -86,58 +86,67 @@
   align-item: left;
 }
 
+/* Navigation Menu */
 .nav {
-    background-color:rgba(0, 0, 0, 0.85) !important ; 
-    position: absolute;
-    width: 100%;
-    max-width: 100%;
-    display: none; 
-    text-align: center;
-    padding: 0; 
-    margin: 10px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%; /* Adjusted to cover a portion of the screen */
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
     z-index: 1000;
 }
 
 
+/* Show Menu */
 .nav.active {
-    display: flex;
+    transform: translateX(0);
 }
 
-.nav a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
+/* Close Button */
+.close-btn {
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: right;
+}
+
+/* Navigation Links */
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.nav li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
     display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    color: white;
 }
 
 
-.nav a:hover {
-     color: gray;
-    }
-
-.nav a:active {
-   color: orange;
-   font-weight: bold;
-    }
-
-.nav a:focus {
-   color: orange;
-  }
-
+/* Hamburger Button */
 .hamburger {
-    display: none; /* Hide by default on larger screens */
+    display: block; /* Displayed on mobile */
     background: none;
     border: none;
     font-size: 24px;
     color: white;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 25px;
-    right: 20px; /* Adjust to fit your layout */
+    right: 20px;
+    z-index: 1001;
 }
 
 
