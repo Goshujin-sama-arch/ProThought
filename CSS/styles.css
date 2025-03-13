@@ -177,8 +177,9 @@ p, section p {
     .nav a {
         text-decoration: none;
         color: white;
-        font-size: 30px;
+        font-size: 25px;
         display: block;
+        padding: 5px;
     }
 
     .hamburger {
