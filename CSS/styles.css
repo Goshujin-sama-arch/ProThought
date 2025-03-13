@@ -86,14 +86,14 @@
   align-item: left;
 }
 
-/* Navigation Menu */
+
 .nav {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 40%; /* Adjusted to cover a portion of the screen */
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.85);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     transform: translateX(-100%);
     transition: transform 0.4s ease;
@@ -101,12 +101,11 @@
 }
 
 
-/* Show Menu */
-.nav.active {
+.nav:active {
     transform: translateX(0);
 }
 
-/* Close Button */
+
 .close-btn {
     padding: 15px;
     font-size: 20px;
@@ -114,18 +113,13 @@
     text-align: right;
 }
 
-/* Navigation Links */
+
 .nav ul {
     list-style: none;
     padding: 10px;
     margin: 10px;
     text-align: left;
     text-decoration: none;
-}
-
-.nav li {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
 }
 
 .nav a {
@@ -136,7 +130,6 @@
 }
 
 
-/* Hamburger Button */
 .hamburger {
     display: block; /* Displayed on mobile */
     background-color: rgba(0, 0, 0, 0.85);
