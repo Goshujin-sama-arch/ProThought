@@ -158,15 +158,15 @@ p, section p {
         z-index: 1000;
     }
 
-   .nav:hover{
+   .nav a:hover{
       color: orange;
     }
 
-   .nav:active{
+   .nav a:active{
       color: orange;
     }
 
-   .nav:focus{
+   .nav a:focus{
       color: orange;
     }
 
