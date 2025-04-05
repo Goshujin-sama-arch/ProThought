@@ -75,6 +75,7 @@ p, section p {
 .logo {
     font-size: 30px;
     font-weight: bold;
+    text-align: left;
 }
 
 .prothought {
