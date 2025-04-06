@@ -66,16 +66,15 @@ p, section p {
 .header {
     background-color: rgba(0, 0, 0, 0.85);
     display: flex;
-    text-align: left;
     padding: 20px;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
 }
 
 .logo {
     font-size: 30px;
     font-weight: bold;
-    text-align: left;
+    align-items: left;
 }
 
 .prothought {
